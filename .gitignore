@@ -1,0 +1,57 @@
+# General
+.DS_Store
+Thumbs.db
+
+# CMake build files
+/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+*.dir/
+
+# Compiled object files
+*.o
+*.obj
+*.lo
+*.slo
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Compiled dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled static libraries
+*.a
+*.lib
+
+# Executable files
+*.exe
+*.out
+*.app
+BacktestEngine
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.pid
+
+# IDE-specific files
+.idea/
+.vscode/
+*.code-workspace
+
+# Generated files
+*.i
+*.s
+*.d
+*.dSYM/
+*.stackdump

@@ -1,14 +1,14 @@
 #include "ExecutionSimulator.hpp"
 
 std::vector<Trade> ExecutionSimulator::simulate(const std::vector<Order>& orders, const Tick& tick) {
-    log("Simulation started.");
+    std::cout << "[ExecutionSimulator] Simulation started." << std::endl;
     std::vector<Trade> trades;
     for (const auto& order : orders) {
         if (order.price == tick.getPrice()) { // Simple matching logic
             trades.push_back({order.symbol, order.side, order.price, order.quantity, tick.getTimestamp()});
-            log("Order executed: " + order.symbol);
+            std::cout << "[ExecutionSimulator] Order executed: " << order.symbol << std::endl;
         }
     }
-    log("Simulation completed.");
+    std::cout << "[ExecutionSimulator] Simulation completed." << std::endl;
     return trades;
 } 
